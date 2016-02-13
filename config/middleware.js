@@ -98,8 +98,8 @@ module.exports = {
         customMiddleware: function (app) {
 	console.log('Express Middleware -- Start Facebook Passport Strategy');
             passport.use(new FacebookStrategy({
-                clientID: "520405918140970",
-       	        clientSecret: "d287710fe5a8bad74c5ad8f40afee85b",
+                clientID: "Client Id",
+       	        clientSecret: "Client Secret",
         	callbackURL: "http://localhost:1337/auth/facebook/callback",
                 },
                 verifyHandler
@@ -107,8 +107,8 @@ module.exports = {
 
 
     passport.use(new GoogleStrategy({
-      clientID: '453747433234-gips4b7qnfe3bf9ug4sf9mr505j44r6b.apps.googleusercontent.com',
-      clientSecret: 'Pg3WPu-w1uQTrEXzyB1gSclJ',
+                clientID: "Client Id",
+                clientSecret: "Client Secret",
       callbackURL: 'http://localhost:1337/auth/google/callback'
     }, verifyHandler));
 
