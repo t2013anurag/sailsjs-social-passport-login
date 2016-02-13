@@ -1,5 +1,5 @@
 # sailsjs-social-passport-login
-Basic example to intergrate Facebook with Sails.JS
+Basic example to integrate Facebook and Google with Sails.JS
 ---------------------------------------------------
 
 Please follow the instructions on [sailsjs.org](http://sailsjs.org) to launch SailsJS.
@@ -11,6 +11,12 @@ In order to utilize the application, please modify: **config/middleware.js**; ch
                 clientSecret: "CLIENTSECRET",
                 callbackURL: "http://localhost:1337/auth/facebook/callback",
                 },
+                passport.use(new GoogleStrategy({
+                clientID: "CLIENTID",
+                clientSecret: "CLIENTSECRET",
+                callbackURL: "http://localhost:1337/auth/google/callback",
+                },
+                
 
 Please run npm install before lifting Sails.
 
