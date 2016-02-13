@@ -12,6 +12,7 @@
 	"passport": "0.1.17",
 	"passport-local": "0.1.6",
 	"passport-facebook":"1.0.1",
+    "passport-google-oauth": "^0.1.5",
 	"sails-mongo":"0.9.3",
 	"bcrypt": "0.7.6"
     },
